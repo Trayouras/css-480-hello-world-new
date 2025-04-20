@@ -14,6 +14,8 @@ export default function Home() {
 
   // Function to re-sort the list
   const reorderList = () => {
+    // I was playing around with this and I realized it's fun to try to get the
+    // "Redundancy"s to pair up, so I set it to random
     const shuffled = [...interests].sort(() => Math.random() - 0.5);
     setInterests(shuffled);
   };
@@ -28,7 +30,7 @@ export default function Home() {
           <h2>About Me</h2>
           <p>
             Hi, I'm Trey! I'm a computer science and software engineering junior at the University of Washington's
-            Bothell campus. I am particularly interested in biotech or game development.
+            Bothell campus. I am particularly interested in biotech and game development.
           </p>
           <img
               src="/selfie-new.jpg"
@@ -55,25 +57,25 @@ export default function Home() {
 const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
-    padding: "20px",
+    padding: "30px",
     textAlign: "center",
     maxWidth: "800px",
     margin: "auto",
   },
   header: {
     borderBottom: "1px solid #ddd",
-    paddingBottom: "10px",
-    marginBottom: "20px",
+    paddingBottom: "15px",
+    marginBottom: "25px",
   },
   section: {
-    marginBottom: "20px",
+    marginBottom: "25px",
   },
   image: {
     maxWidth: "200px",
-    borderRadius: "10px",
+    borderRadius: "15px",
   },
   button: {
-    padding: "10px 20px",
+    padding: "15px 25px",
     backgroundColor: "#0070f3",
     color: "#fff",
     border: "none",
