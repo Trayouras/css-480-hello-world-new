@@ -1,95 +1,79 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React, { useState } from 'react';
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  // List of interests
+  const [interests, setInterests] = useState([
+    "Programming",
+    "Problem-solving",
+    "Learning ARM architecture"
+  ]);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+  // Function to re-sort the list
+  const reorderList = () => {
+    const shuffled = [...interests].sort(() => Math.random() - 0.5);
+    setInterests(shuffled);
+  };
+
+  return (
+      <div style={styles.container}>
+        <header style={styles.header}>
+          <h1>Hello World!</h1>
+          <p>Welcome to my CSS 480 landing page!</p>
+        </header>
+        <section style={styles.section}>
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Trey! I'm passionate about programming, particularly in assembly language and ARM architecture.
+            I enjoy debugging and solving complex technical challenges.
+          </p>
+          <img
+              src="https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-pukei-pukei_render_001.png"
+              alt="A picture representing me"
+              style={styles.image}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </section>
+        <section style={styles.section}>
+          <h2>Things That Interest Me</h2>
+          <ul>
+            {interests.map((interest, index) => (
+                <li key={index}>{interest}</li>
+            ))}
+          </ul>
+          <button onClick={reorderList} style={styles.button}>
+            Re-order List
+          </button>
+        </section>
+      </div>
   );
 }
+
+// Simple styles for the page
+const styles = {
+  container: {
+    fontFamily: "Arial, sans-serif",
+    padding: "20px",
+    textAlign: "center",
+    maxWidth: "800px",
+    margin: "auto",
+  },
+  header: {
+    borderBottom: "1px solid #ddd",
+    paddingBottom: "10px",
+    marginBottom: "20px",
+  },
+  section: {
+    marginBottom: "20px",
+  },
+  image: {
+    maxWidth: "200px",
+    borderRadius: "10px",
+  },
+  button: {
+    padding: "10px 20px",
+    backgroundColor: "#0070f3",
+    color: "#fff",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+  },
+};
