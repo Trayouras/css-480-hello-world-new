@@ -57,25 +57,25 @@ export default function Home() {
 const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
-    padding: "30px",
+    padding: "40px",
     textAlign: "center",
     maxWidth: "800px",
     margin: "auto",
   },
   header: {
     borderBottom: "1px solid #ddd",
-    paddingBottom: "15px",
-    marginBottom: "25px",
+    paddingBottom: "25px",
+    marginBottom: "35px",
   },
   section: {
-    marginBottom: "25px",
+    marginBottom: "35px",
   },
   image: {
     maxWidth: "200px",
-    borderRadius: "15px",
+    borderRadius: "25px",
   },
   button: {
-    padding: "15px 25px",
+    padding: "25px 35px",
     backgroundColor: "#0070f3",
     color: "#fff",
     border: "none",
