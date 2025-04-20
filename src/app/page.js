@@ -60,7 +60,7 @@ const styles = {
     padding: "30px",
     textAlign: "center",
     maxWidth: "800px",
-    margin: "200px auto",
+    margin: "auto",
   },
   header: {
     borderBottom: "10px solid #ddd",
@@ -68,7 +68,7 @@ const styles = {
     marginBottom: "25px",
   },
   section: {
-    marginBottom: "25px",
+    marginBottom: "250px",
   },
   image: {
     maxWidth: "200px",
