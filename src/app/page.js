@@ -57,10 +57,10 @@ export default function Home() {
 const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
-    padding: "300px",
+    padding: "30px",
     textAlign: "center",
     maxWidth: "800px",
-    margin: "auto",
+    margin: "300px",
   },
   header: {
     borderBottom: "10px solid #ddd",
