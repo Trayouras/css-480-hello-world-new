@@ -8,7 +8,8 @@ export default function Home() {
     "Problem-solving",
     "Video Games",
       "Redundancy",
-      "List Sorting"
+      "List Sorting",
+      "Programming"
   ]);
 
   // Function to re-sort the list
@@ -26,11 +27,11 @@ export default function Home() {
         <section style={styles.section}>
           <h2>About Me</h2>
           <p>
-            Hi, I'm Trey! I'm a computer science and software engineering student at the University of Washington's
-            Bothell campus.
+            Hi, I'm Trey! I'm a computer science and software engineering junior at the University of Washington's
+            Bothell campus. I am particularly interested in biotech or game development.
           </p>
           <img
-              src="https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-pukei-pukei_render_001.png"
+              src="/selfie-new.jpg"
               alt="A picture representing me"
               style={styles.image}
           />
