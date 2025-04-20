@@ -57,7 +57,7 @@ export default function Home() {
 const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
-    padding: "30px",
+    padding: "300px",
     textAlign: "center",
     maxWidth: "800px",
     margin: "auto",
@@ -68,7 +68,7 @@ const styles = {
     marginBottom: "25px",
   },
   section: {
-    marginBottom: "250px",
+    marginBottom: "15px",
   },
   image: {
     maxWidth: "200px",
