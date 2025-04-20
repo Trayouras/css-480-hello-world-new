@@ -60,10 +60,10 @@ const styles = {
     padding: "30px",
     textAlign: "center",
     maxWidth: "800px",
-    margin: "20px auto",
+    margin: "200px auto",
   },
   header: {
-    borderBottom: "1px solid #ddd",
+    borderBottom: "10px solid #ddd",
     paddingBottom: "15px",
     marginBottom: "25px",
   },
