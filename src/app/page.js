@@ -58,7 +58,7 @@ const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
     padding: "30px",
-    textAlign: "justify",
+    textAlign: "center",
     maxWidth: "800px",
     margin: "30px",
     lineHeight: "30px",
