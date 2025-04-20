@@ -60,7 +60,7 @@ const styles = {
     padding: "30px",
     textAlign: "center",
     maxWidth: "800px",
-    margin: "300px",
+    margin: "30px",
   },
   header: {
     borderBottom: "10px solid #ddd",
