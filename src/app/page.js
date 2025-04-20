@@ -61,6 +61,7 @@ const styles = {
     textAlign: "center",
     maxWidth: "800px",
     margin: "30px",
+    lineHeight: "300px",
   },
   header: {
     borderBottom: "10px solid #ddd",
