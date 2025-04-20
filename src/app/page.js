@@ -4,9 +4,11 @@ import React, { useState } from 'react';
 export default function Home() {
   // List of interests
   const [interests, setInterests] = useState([
-    "Programming",
+    "Redundancy",
     "Problem-solving",
-    "Learning ARM architecture"
+    "Video Games",
+      "Redundancy",
+      "List Sorting"
   ]);
 
   // Function to re-sort the list
