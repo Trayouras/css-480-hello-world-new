@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+'use client';
 
+import React, { useState } from 'react';
 export default function Home() {
   // List of interests
   const [interests, setInterests] = useState([
