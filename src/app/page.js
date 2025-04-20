@@ -61,7 +61,7 @@ const styles = {
     textAlign: "right",
     maxWidth: "800px",
     margin: "30px",
-    lineHeight: "30px",
+    //lineHeight: "30px",
   },
   header: {
     borderBottom: "10px solid #ddd",
