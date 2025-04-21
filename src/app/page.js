@@ -58,10 +58,10 @@ const styles = {
   container: {
     fontFamily: "Arial, sans-serif",
     padding: "30px",
-    textAlign: "right",
+    textAlign: "center",
     maxWidth: "auto",
     margin: "30px",
-    //lineHeight: "30px",
+    lineHeight: "30px",
   },
   header: {
     borderBottom: "10px solid #ddd",
