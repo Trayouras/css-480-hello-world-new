@@ -59,7 +59,7 @@ const styles = {
     fontFamily: "Arial, sans-serif",
     padding: "30px",
     textAlign: "right",
-    maxWidth: "80px",
+    maxWidth: "2000px",
     margin: "30px",
     //lineHeight: "30px",
   },
