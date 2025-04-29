@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from "../navbar";
 
 
@@ -18,8 +18,29 @@ export default function Home() {
     const shuffled = [...interests].sort(() => Math.random() - 0.5);
     setInterests(shuffled);
   };
+  useEffect(() => {
 
-  return (
+    const handleKeyDown = (event) => {
+    if (document.activeElement.tagName === "A") {
+      const links = document.querySelectorAll("a");
+      let currentIndex = [...links].indexOf(document.activeElement);
+
+      if (event.key === "ArrowDown" && currentIndex < links.length - 1) {
+        links[currentIndex + 1].focus();
+      } else if (event.key === "ArrowUp" && currentIndex > 0) {
+        links[currentIndex - 1].focus();
+      } else if (event.key === "Enter" && currentIndex < 0) {
+        links[currentIndex].focus();
+      }
+    }
+  };
+
+  document.addEventListener("keydown", handleKeyDown);
+  return () => document.removeEventListener("keydown", handleKeyDown);
+}, []);
+
+
+return (
       <div style={styles.container}>
         <header style={styles.header}>
           <h1>Hello World!</h1>
@@ -45,6 +66,7 @@ export default function Home() {
           </button>
         </section>
       </div>
+
   );
 }
 
