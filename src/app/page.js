@@ -3,7 +3,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Navbar from 'navbar.js';
+import Navbar from "./navbar";
 
 export default function Home() {
   const [interests, setInterests] = useState([

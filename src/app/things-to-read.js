@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Navbar from '/Navbar';
+import Navbar from './navbar';
 
 export default function ThingsToRead() {
     const links = [
