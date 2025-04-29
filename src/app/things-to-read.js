@@ -33,6 +33,20 @@ export default function ThingsToRead() {
     );
 }
 
+document.addEventListener('keydown', (event) => {
+    if (document.activeElement.tagName === 'A') {
+        const links = document.querySelectorAll('a');
+        let currentIndex = [...links].indexOf(document.activeElement);
+
+        if (event.key === 'ArrowDown' && currentIndex < links.length - 1) {
+            links[currentIndex + 1].focus();
+        } else if (event.key === 'ArrowUp' && currentIndex > 0) {
+            links[currentIndex - 1].focus();
+        }
+    }
+});
+
+
 // Styles...
 const styles = {
     container: {
