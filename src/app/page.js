@@ -1,27 +1,28 @@
 'use client';
 
+'use client';
+
 import React, { useState } from 'react';
+import Navbar from '/Navbar';
+
 export default function Home() {
-  // List of interests
   const [interests, setInterests] = useState([
     "Redundancy",
     "Problem-solving",
     "Video Games",
-      "Redundancy",
-      "List Sorting",
-      "Programming"
+    "Redundancy",
+    "List Sorting",
+    "Programming"
   ]);
 
-  // Function to re-sort the list
   const reorderList = () => {
-    // I was playing around with this and I realized it's fun to try to get the
-    // "Redundancy"s to pair up, so I set it to random
     const shuffled = [...interests].sort(() => Math.random() - 0.5);
     setInterests(shuffled);
   };
 
   return (
       <div style={styles.container}>
+        <Navbar />
         <header style={styles.header}>
           <h1>Hello World!</h1>
           <p>Welcome to my CSS 480 landing page!</p>
@@ -29,14 +30,10 @@ export default function Home() {
         <section style={styles.section}>
           <h2>About Me</h2>
           <p>
-            Hi, I'm Trey! I'm a computer science and software engineering junior at the University of Washington's
-            Bothell campus. I am particularly interested in biotech and game development.
+            Hi, I'm Trey! I'm a computer science and software engineering junior at UW Bothell.
+            I'm particularly interested in biotech and game development.
           </p>
-          <img
-              src="/selfie-new.jpg"
-              alt="A picture representing me"
-              style={styles.image}
-          />
+          <img src="/selfie-new.jpg" alt="A picture representing me" style={styles.image} />
         </section>
         <section style={styles.section}>
           <h2>Things That Interest Me</h2>
