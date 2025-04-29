@@ -7,12 +7,13 @@ export default function Navbar() {
             <Link href="/" passHref>
                 <button style={styles.button}>Home</button>
             </Link>
-            <Link href="things-to-read/page.js" passHref>
+            <Link href="/things-to-read" passHref>
                 <button style={styles.button}>Things to Read</button>
             </Link>
         </nav>
     );
 }
+
 
 const styles = {
     nav: {
