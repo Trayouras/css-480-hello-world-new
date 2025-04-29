@@ -4,10 +4,10 @@ import Link from 'next/link';
 export default function Navbar() {
     return (
         <nav style={styles.nav}>
-            <Link href="page.js" passHref>
+            <Link href="/" passHref>
                 <button style={styles.button}>Home</button>
             </Link>
-            <Link href="things-to-read.js" passHref>
+            <Link href="/things-to-read" passHref>
                 <button style={styles.button}>Things to Read</button>
             </Link>
         </nav>
