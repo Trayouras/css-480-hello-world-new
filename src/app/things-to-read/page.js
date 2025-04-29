@@ -11,7 +11,7 @@ export default function ThingsToRead() {
         { title: "CSS Tricks", url: "https://css-tricks.com/" },
         { title: "Random Websites", url: "https://theuselessweb.com/" },
         { title: "JavaScript Info", url: "https://javascript.info/" },
-        { title: "FreeCodeCamp", url: "https://www.freecodecamp.org/" },
+        { title: "Programming Challenges", url: "https://www.hackerrank.com/" },
         { title: "Intro to Recursion", url: "https://www.geeksforgeeks.org/introduction-to-recursion-2/" },
         { title: "SteamDB, for PC Game Sales", url: "https://steamdb.info/sales/" },
         { title: "Vercel Deployment Guide", url: "https://vercel.com/docs" }
