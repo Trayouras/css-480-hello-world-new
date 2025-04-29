@@ -14,7 +14,6 @@ export default function Navbar() {
     );
 }
 
-
 const styles = {
     nav: {
         display: "flex",
