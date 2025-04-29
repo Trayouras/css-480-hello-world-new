@@ -21,7 +21,6 @@ export default function Home() {
 
   return (
       <div style={styles.container}>
-        <Navbar />
         <header style={styles.header}>
           <h1>Hello World!</h1>
           <p>Welcome to my CSS 480 landing page!</p>

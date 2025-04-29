@@ -37,7 +37,6 @@ export default function ThingsToRead() {
 
     return (
         <div style={styles.container}>
-            <Navbar />
             <h1>Things to Read</h1>
             <p>Here are some resources I find valuable:</p>
             <ul>
