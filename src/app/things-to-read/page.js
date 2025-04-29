@@ -48,6 +48,10 @@ export default function ThingsToRead() {
                     </li>
                 ))}
             </ul>
+            <h1>Documentation</h1>
+            <p>You can navigate this site by pressing tab to navigate between links and buttons,
+            or you can press the up and down arrow keys after pressing tab. You can also press enter to open a link.
+            This lets you navigate these tabs fully with your keyboard, in case you can't use a mouse.</p>
         </div>
     );
 }
