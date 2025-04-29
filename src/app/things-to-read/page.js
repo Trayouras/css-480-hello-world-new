@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect } from "react";
+import Navbar from "../navbar";
 
 export default function ThingsToRead() {
     const links = [
@@ -16,23 +17,42 @@ export default function ThingsToRead() {
         { title: "Vercel Deployment Guide", url: "https://vercel.com/docs" }
     ];
 
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (document.activeElement.tagName === "A") {
+                const links = document.querySelectorAll("a");
+                let currentIndex = [...links].indexOf(document.activeElement);
+
+                if (event.key === "ArrowDown" && currentIndex < links.length - 1) {
+                    links[currentIndex + 1].focus();
+                } else if (event.key === "ArrowUp" && currentIndex > 0) {
+                    links[currentIndex - 1].focus();
+                }
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, []);
+
+    return (
+        <div style={styles.container}>
+            <Navbar />
+            <h1>Things to Read</h1>
+            <p>Here are some resources I find valuable:</p>
+            <ul>
+                {links.map((link, index) => (
+                    <li key={index}>
+                        <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
-document.addEventListener('keydown', (event) => {
-    if (document.activeElement.tagName === 'A') {
-        const links = document.querySelectorAll('a');
-        let currentIndex = [...links].indexOf(document.activeElement);
-
-        if (event.key === 'ArrowDown' && currentIndex < links.length - 1) {
-            links[currentIndex + 1].focus();
-        } else if (event.key === 'ArrowUp' && currentIndex > 0) {
-            links[currentIndex - 1].focus();
-        }
-    }
-});
-
-
 // Styles...
+
 const styles = {
     container: {
         fontFamily: "Arial, sans-serif",
