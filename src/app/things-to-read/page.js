@@ -9,11 +9,11 @@ export default function ThingsToRead() {
         { title: "Next.js Official Site", url: "https://nextjs.org/" },
         { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
         { title: "CSS Tricks", url: "https://css-tricks.com/" },
-        { title: "WebAim Accessibility Guide", url: "https://webaim.org/" },
+        { title: "Random Websites", url: "https://theuselessweb.com/" },
         { title: "JavaScript Info", url: "https://javascript.info/" },
         { title: "FreeCodeCamp", url: "https://www.freecodecamp.org/" },
-        { title: "W3Schools Keyboard Shortcuts", url: "https://www.w3schools.com/tags/ref_keyboardshortcuts.asp" },
-        { title: "Github Docs", url: "https://docs.github.com/" },
+        { title: "Intro to Recursion", url: "https://www.geeksforgeeks.org/introduction-to-recursion-2/" },
+        { title: "SteamDB, for PC Game Sales", url: "https://steamdb.info/sales/" },
         { title: "Vercel Deployment Guide", url: "https://vercel.com/docs" }
     ];
 
