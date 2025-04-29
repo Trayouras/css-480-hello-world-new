@@ -4,50 +4,52 @@ import React, { useState } from 'react';
 import Navbar from './navbar';
 
 export default function ThingsToRead() {
-    const links = [
-        { title: "React Documentation", url: "https://reactjs.org/" },
-        { title: "Next.js Official Site", url: "https://nextjs.org/" },
-        { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
-        { title: "CSS Tricks", url: "https://css-tricks.com/" },
-        { title: "WebAim Accessibility Guide", url: "https://webaim.org/" },
-        { title: "JavaScript Info", url: "https://javascript.info/" },
-        { title: "FreeCodeCamp", url: "https://www.freecodecamp.org/" },
-        { title: "W3Schools Keyboard Shortcuts", url: "https://www.w3schools.com/tags/ref_keyboardshortcuts.asp" },
-        { title: "Github Docs", url: "https://docs.github.com/" },
-        { title: "Vercel Deployment Guide", url: "https://vercel.com/docs" }
-    ];
+    const [interests, setInterests] = useState([
+        "Redundancy",
+        "Problem-solving",
+        "Video Games",
+        "Redundancy",
+        "List Sorting",
+        "Programming"
+    ]);
+
+    const reorderList = () => {
+        const shuffled = [...interests].sort(() => Math.random() - 0.5);
+        setInterests(shuffled);
+    };
 
     return (
         <div style={styles.container}>
             <Navbar />
-            <h1>Things to Read</h1>
-            <p>Here are some resources I find valuable:</p>
-            <ul>
-                {links.map((link, index) => (
-                    <li key={index}>
-                        <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
-                    </li>
-                ))}
-            </ul>
+            <header style={styles.header}>
+                <h1>Hello World!</h1>
+                <p>Welcome to my CSS 480 landing page!</p>
+            </header>
+            <section style={styles.section}>
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Trey! I'm a computer science and software engineering junior at UW Bothell.
+                    I'm particularly interested in biotech and game development.
+                </p>
+                <img src="/selfie-new.jpg" alt="A picture representing me" style={styles.image} />
+            </section>
+            <section style={styles.section}>
+                <h2>Things That Interest Me</h2>
+                <ul>
+                    {interests.map((interest, index) => (
+                        <li key={index}>{interest}</li>
+                    ))}
+                </ul>
+                <button onClick={reorderList} style={styles.button}>
+                    Re-order List
+                </button>
+            </section>
         </div>
     );
 }
 
-document.addEventListener('keydown', (event) => {
-    if (document.activeElement.tagName === 'A') {
-        const links = document.querySelectorAll('a');
-        let currentIndex = [...links].indexOf(document.activeElement);
 
-        if (event.key === 'ArrowDown' && currentIndex < links.length - 1) {
-            links[currentIndex + 1].focus();
-        } else if (event.key === 'ArrowUp' && currentIndex > 0) {
-            links[currentIndex - 1].focus();
-        }
-    }
-});
-
-
-// Styles...
+// Simple styles for the page
 const styles = {
     container: {
         fontFamily: "Arial, sans-serif",
@@ -78,4 +80,3 @@ const styles = {
         cursor: "pointer",
     },
 };
-
