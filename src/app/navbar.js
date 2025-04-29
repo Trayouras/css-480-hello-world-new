@@ -7,7 +7,7 @@ export default function Navbar() {
             <Link href="/" passHref>
                 <button style={styles.button}>Home</button>
             </Link>
-            <Link href="ThingsToRead" passHref>
+            <Link href="/things-to-read" passHref>
                 <button style={styles.button}>Things to Read</button>
             </Link>
         </nav>
