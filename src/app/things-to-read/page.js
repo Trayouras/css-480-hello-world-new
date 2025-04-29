@@ -27,6 +27,8 @@ export default function ThingsToRead() {
                     links[currentIndex + 1].focus();
                 } else if (event.key === "ArrowUp" && currentIndex > 0) {
                     links[currentIndex - 1].focus();
+                } else if (event.key === "Enter" && currentIndex < 0) {
+                    links[currentIndex].focus();
                 }
             }
         };
