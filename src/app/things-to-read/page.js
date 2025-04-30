@@ -40,7 +40,7 @@ export default function ThingsToRead() {
     return (
         <div style={styles.container}>
             <h1>Things to Read</h1>
-            <p>Here are some resources I find valuable:</p>
+            <p>Here are some resources I find useful and interesting:</p>
             <ul>
                 {links.map((link, index) => (
                     <li key={index}>
