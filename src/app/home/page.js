@@ -52,7 +52,7 @@ return (
             Hi, I'm Trey! I'm a computer science and software engineering junior at UW Bothell.
             I'm particularly interested in biotech and game development.
           </p>
-          <img src="/selfie-new.jpg" alt="A picture representing me" style={styles.image} />
+          <img src="/selfie-new.jpg" alt="A picture of me" style={styles.image} />
         </section>
         <section style={styles.section}>
           <h2>Things That Interest Me</h2>
@@ -82,7 +82,7 @@ const styles = {
     lineHeight: "30px",
   },
   header: {
-    borderBottom: "10px solid #ddd",
+    borderBottom: "10px solid #dfffdd",
     paddingBottom: "15px",
     marginBottom: "25px",
   },
