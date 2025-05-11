@@ -82,7 +82,7 @@ const styles = {
         lineHeight: "30px",
     },
     header: {
-        borderBottom: "10px solid #ffffff",
+        borderBottom: "10px solid #000000",
         paddingBottom: "15px",
         marginBottom: "25px",
     },
