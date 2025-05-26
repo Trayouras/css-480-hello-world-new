@@ -35,10 +35,11 @@ export default function Home() {
                 <p>I'm so big and round...</p>
             </header>
             <section style={styles.section}>
-                <h2>About Me</h2>
+                <h2>What is Warhammer?</h2>
                 <p>
-                    Hi, I'm Trey! I'm a computer science and software engineering junior at UW Bothell.
-                    I'm particularly interested in biotech and game development.
+                    Warhammer is a franchise primarily based around tabletop strategy games.
+                    The franchise is divided into three settings: Warhammer Fantasy, a fairly standard
+                    fantasy setting, Warhammer: Age of Sigmar,
                 </p>
                 <img src="/selfie-new.jpg" alt="A picture of me" style={styles.image} />
             </section>
