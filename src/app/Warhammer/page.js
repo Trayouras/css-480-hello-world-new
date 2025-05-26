@@ -98,7 +98,7 @@ const styles = {
         padding: "30px",
         textAlign: "center",
         maxWidth: "auto",
-        margin: "30px",
+        margin: "50px",
         lineHeight: "30px",
     },
     header: {
