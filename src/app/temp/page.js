@@ -39,7 +39,9 @@ export default function Home() {
                 <p>
                     Warhammer is a franchise primarily based around tabletop strategy games.
                     The franchise is divided into three settings: Warhammer Fantasy, a fairly standard
-                    fantasy setting, Warhammer: Age of Sigmar,
+                    fantasy setting, Warhammer Age of Sigmar, a more fantastical setting that occurs after
+                    Warhammer Fantasy, and Warhammer 40,000, also known as 40k, which is a science fiction setting
+                    that exists in a totally separate universe to the other two setting.
                 </p>
                 <img src="/selfie-new.jpg" alt="A picture of me" style={styles.image} />
             </section>
