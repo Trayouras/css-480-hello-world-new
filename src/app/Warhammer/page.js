@@ -95,7 +95,7 @@ export default function Home() {
 const styles = {
     container: {
         fontFamily: "Arial, sans-serif",
-        padding: "18px",
+        padding: "30px",
         textAlign: "center",
         maxWidth: "auto",
         margin: "30px",
