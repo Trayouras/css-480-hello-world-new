@@ -10,6 +10,9 @@ export default function Navbar() {
             <Link href="/things-to-read" passHref>
                 <button style={styles.button}>Things to Read</button>
             </Link>
+            <Link href="/temp" passHref>
+                <button style={styles.button}>Temp</button>
+            </Link>
         </nav>
     );
 }
