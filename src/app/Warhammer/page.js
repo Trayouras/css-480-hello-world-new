@@ -46,6 +46,9 @@ export default function Home() {
                     the years following it, and the Horus Heresy, which is set around 30,000. While the settings
                     are all mostly separate, they share many similarities, both in terms of tone and characters.
                 </p>
+                <section style={styles.section}>
+                </section>
+
                 <h3>How do you get in to Warhammer?</h3>
                 <p>
                     The best way to get into Warhammer depends on your preferred setting.
