@@ -41,7 +41,22 @@ export default function Home() {
                     The franchise is divided into three settings: Warhammer Fantasy, a fairly standard
                     fantasy setting, Warhammer Age of Sigmar, a more fantastical setting that occurs after
                     Warhammer Fantasy, and Warhammer 40,000, also known as 40k, which is a science fiction setting
-                    that exists in a totally separate universe to the other two setting.
+                    that exists in a totally separate universe to the other two setting. Warhammer 40k is
+                    the most popular setting and is split into two main time eras: the year 40,000 and
+                    the years following it, and the Horus Heresy, which is set around 30,000. While the settings
+                    are all mostly separate, they share many similarities, both in terms of tone and characters.
+                </p>
+                <h3>How do you get in to Warhammer?</h3>
+                <p>
+                    The best way to get into Warhammer depends on your preferred setting.
+                    While it seems obvious to start by playing the tabletop game, getting the miniatures
+                    required to play will cost a significant amount, and you have to assemble and
+                    paint them yourself. A cheaper starting option may be to play one of the video games
+                    for your chosen setting. For Fantasy and 40k respectively, Total War: Warhammer 3 and
+                    Dawn of War 1 are excellent choices for strategy games, which matches the
+                    pace of the tabletop games, or you could play Vermintide 2 and Space Marine 2, which are
+                    faster and more action-packed. Age of Sigmar is more recent and less popular than the other
+                    two settings, and as such there are very few games for it.
                 </p>
                 <img src="/selfie-new.jpg" alt="A picture of me" style={styles.image} />
             </section>
