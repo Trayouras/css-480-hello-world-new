@@ -11,7 +11,8 @@ export default function Home() {
     "Video Games",
     "Redundancy",
     "List Sorting",
-    "Programming"
+    "Programming",
+      "Warhammer"
   ]);
 
   const reorderList = () => {
