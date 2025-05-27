@@ -66,7 +66,7 @@ export default function Home() {
                     For Fantasy, I like the Skaven, a race of rat-people, and the the self-explanatory Lizardmen.
                 </p>
             </header>
-                <img src="/Warhammer Box Art.jpg" alt="Box art for a Warhammer 40k set depicting the Ultramarines in combat with the Plague Guard" style={styles.image} />
+                <img src="/Warhammer Box Art.jpeg" alt="Box art for a Warhammer 40k set depicting the Ultramarines in combat with the Plague Guard" style={styles.image} />
         </div>
 
     );
