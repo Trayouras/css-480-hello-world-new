@@ -32,8 +32,8 @@ export default function Home() {
 
         <div style={styles.container}>
             <header style={styles.header}>
-                <img src="/Warhammer Box Art.jpeg" alt="Box art for a Warhammer 40k set depicting the Ultramarines in combat with the Plague Guard" style={styles.image} />
                 <h1>What is Warhammer?</h1>
+                <img src="/Warhammer Box Art.jpeg" alt="Box art for a Warhammer 40k set depicting the Ultramarines in combat with the Plague Guard" style={styles.image} />
                 <p> Warhammer is a franchise primarily based around tabletop strategy games.
                     The franchise is divided into three settings: Warhammer Fantasy, a fairly standard
                     fantasy setting, Warhammer Age of Sigmar, a more fantastical setting that occurs after
@@ -45,8 +45,8 @@ export default function Home() {
                 </p>
             </header>
             <header style={styles.header}>
-                <img src="/Total Warhammer 3 Box Art.jpg" alt="Box art for the PC game Total War: Warhammer 3" style={styles.image} />
                 <h1>How do you get in to Warhammer?</h1>
+                <img src="/Total Warhammer 3 Box Art.jpg" alt="Box art for the PC game Total War: Warhammer 3" style={styles.image} />
                 <p>
                     The best way to get into Warhammer depends on your preferred setting.
                     While it seems obvious to start by playing the tabletop game, getting the miniatures
@@ -61,6 +61,7 @@ export default function Home() {
             </header>
             <header style={styles.header}>
                 <h1>My personal opinions</h1>
+                <img src="/Necrons-warhammer-40k.jpg" alt="Art depicting the Necrons from Warhammer 40k" style={styles.image} />
                 <p> Since I am too frugal to play the tabletop game, my opinions are all based
                     on lore and the video games. In terms of 40k, I am quite fond of the Necrons, hyper-advanced robot skeleton aliens.
                     I also like the Chaos god Tzeentch and his associated factions, especially the Thousand Sons,
@@ -68,6 +69,8 @@ export default function Home() {
                     the Imperium of Man, my favorite is easily the Adeptus Mechanicus, a cult of technology worshipping cyborgs.
                     For Fantasy, I like the Skaven, a race of rat-people, and the the self-explanatory Lizardmen.
                 </p>
+                <img src="/Total-War-Warhammer-2-Skaven.jpg" alt="Art depicting the Skaven from Warhammer Fantasy" style={styles.image} />
+
             </header>
         </div>
 
