@@ -97,7 +97,7 @@ const styles = {
         marginBottom: "30px",
     },
     image: {
-        maxWidth: "450px",
+        maxWidth: "270px",
         borderRadius: "45px",
         margin: "auto",
     },
