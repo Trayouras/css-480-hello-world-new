@@ -90,11 +90,11 @@ const styles = {
     },
     header: {
         borderTop: "10px solid #000000",
-        paddingTop: "15px",
+        paddingTop: "30px",
         marginTop: "25px",
     },
     section: {
-        marginBottom: "15px",
+        marginBottom: "30px",
     },
     image: {
         maxWidth: "450px",
