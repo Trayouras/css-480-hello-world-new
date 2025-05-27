@@ -99,6 +99,7 @@ const styles = {
     image: {
         maxWidth: "450px",
         borderRadius: "45px",
+        margin: "auto",
     },
     button: {
         padding: "15px 25px",
