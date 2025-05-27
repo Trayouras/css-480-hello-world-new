@@ -97,7 +97,7 @@ const styles = {
         marginBottom: "15px",
     },
     image: {
-        maxWidth: "2000px",
+        maxWidth: "900px",
         borderRadius: "45px",
     },
     button: {
