@@ -29,7 +29,9 @@ export default function Home() {
 
 
     return (
+
         <div style={styles.container}>
+            <img src="/Warhammer Box Art.jpeg" alt="Box art for a Warhammer 40k set depicting the Ultramarines in combat with the Plague Guard" style={styles.image} />
             <header style={styles.header}>
                 <h1>What is Warhammer?</h1>
                 <p> Warhammer is a franchise primarily based around tabletop strategy games.
@@ -42,6 +44,7 @@ export default function Home() {
                     are all mostly separate, they share many similarities, both in terms of tone and characters.
                 </p>
             </header>
+            <img src="/Total Warhammer 3 Box Art.jpg" alt="Box art for the PC game Total War: Warhammer 3" style={styles.image} />
             <header style={styles.header}>
                 <h1>How do you get in to Warhammer?</h1>
                 <p>
@@ -66,7 +69,6 @@ export default function Home() {
                     For Fantasy, I like the Skaven, a race of rat-people, and the the self-explanatory Lizardmen.
                 </p>
             </header>
-                <img src="/Warhammer Box Art.jpeg" alt="Box art for a Warhammer 40k set depicting the Ultramarines in combat with the Plague Guard" style={styles.image} />
         </div>
 
     );
